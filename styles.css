@@ -1,0 +1,164 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #222;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin: auto;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: #fff;
+
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Portfolio Section */
+#portoflio {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#portoflio h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.portoflio-gril {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.portoflio-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.portoflio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portoflio-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.portoflio-item h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 3rem 2rem;
+  background: #eee;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #e64a19;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.socil-media a {
+  color: #ff9800;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.socil-media a:hover {
+  text-decoration: underline;
+}
